@@ -1,12 +1,13 @@
 package com.calvin.book.springboot.domain.posts;
 
+import com.calvin.book.springboot.domain.BaseTimeEntity;
 import lombok.*;
 import javax.persistence.*;
 
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
